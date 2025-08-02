@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Monki</title>
+  <style>
+    /* --- ESTILO GLOBAL --- */
+    body {
+      margin: 0;
+      font-family: 'Verdana', sans-serif;
+      background-color: #000;
+      color: #00bfff;
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+    }
+
+    /* --- ENCABEZADO --- */
+    header {
+      background-color: #111;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 2px solid #00bfff;
+    }
+
+    .logo {
+      font-size: 32px;
+      font-weight: bold;
+      color: white;
+      text-decoration: underline dotted;
+    }
+
+    .menu {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .menu a {
+      color: #00bfff;
+      text-decoration: none;
+      font-size: 16px;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    /* --- CUERPO PRINCIPAL --- */
+    .container {
+      display: flex;
+      flex: 1;
+    }
+
+    /* --- BARRA LATERAL --- */
+    .sidebar {
+      width: 220px;
+      background-color: #111;
+      padding: 20px;
+      border-right: 2px solid #00bfff;
+    }
+
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .sidebar li {
+      margin-bottom: 15px;
+    }
+
+    .sidebar a {
+      color: #00bfff;
+      text-decoration: none;
+    }
+
+    .sidebar a:hover {
+      text-decoration: underline dotted;
+    }
+
+    /* --- ÁREA PRINCIPAL --- */
+    .main {
+      flex: 1;
+      padding: 20px;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">monki</div>
+    <nav class="menu">
+      <a href="#">Inicio</a>
+      <a href="#">Logo</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <ul>
+        <li><a href="#">Interactivo</a></li>
+        <li><a href="#">Media</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="#">Debates</a></li>
+      </ul>
+    </aside>
+
+    <main class="main">
+      <h2>¡Bienvenid@ a Monki!</h2>
+      <p>Aquí irá el contenido principal que tú vayas creando.</p>
+    </main>
+  </div>
+</body>
+</html>
